@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: lavender;
+    font-family: "Comic Sans MS";
+}
+
+.container {
+    padding-top: 0.5cm;
+}
+
+.cards-item {
+    border: 2px solid black;
+    background-color: white;
+    width: 850px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.button1 {
+    float: right;
+    margin: -0.48cm 5cm 0 0;
+    font-family: Arial;
+
+}
+
+.button2{
+    float: left;
+    margin: 1.5cm 0 0 0.5cm ;
+
+
+}
+
+
+.boxSite{
+    margin: 2cm 17.3cm 0 0;
+    font-size: 17px;
+}
+
+.boxSite2{
+    margin: 0.75cm 14.75cm 0 0;
+    font-size: 17px;
+}
+
+.tableHead{
+    margin: 0.75cm 16.3cm 0 0;
+    font-size: 17px;
+
+}
+
+.buttonCreateSemester {
+    border: 1.5px outset black;
+    float:left;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin: 1cm 0 0 20cm;
+    width: 320px;
+    font-size: small;
+    text-align: center;
+}
+
+.buttonModifySelectedSemester {
+    border: 1.5px outset black;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin: 1cm 7.65cm 0 0;
+    float:right;
+    width: 320px;
+    font-size: small;
+    text-align: center;
+}
+
+.buttonDeleteSelectedSemester {
+    border: 1.5px outset black;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin: 3cm -8.5cm 0 0;
+    float:right;
+    width: 320px;
+    font-size: small;
+    text-align: center;
+}
+
+.buttonCreateSemester:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.buttonCreateSemester:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}
+
+
+.buttonModifySelectedSemester:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.buttonModifySelectedSemester:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}
+
+.buttonDeleteSelectedSemester:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.buttonDeleteSelectedSemester:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}

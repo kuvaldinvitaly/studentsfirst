@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: lavender;
+    font-family: "Comic Sans MS";
+}
+
+.container {
+    /*margin:0 17.5% 0 17%;*/
+    padding-top: 0.5cm;
+
+}
+
+.cards-item {
+    border: 2px solid black;
+    background-color: white;
+    width: 1000px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.buttonToMain {
+    float: left;
+    margin: 1cm 0 0 1cm;
+}
+
+.buttonLogout {
+    float: right;
+    margin: -0.46cm 3cm 0 0;
+    font-family: Arial;
+}
+
+.tableHead{
+    margin: 0.7cm 0 0 1.8cm;
+    font-size: xx-small;
+    float: left;
+}
+
+.buttonCreateDisciplines {
+    border: 1.5px outset black;
+    float:left;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin: 3cm 0 0 9cm;
+    width: 320px;
+    font-size: small;
+    text-align: center;
+}
+
+.buttonModifySelectedDiscipline {
+    border: 1.5px outset black;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin: 1cm 9cm 0 0;
+    float:right;
+    width: 320px;
+    font-size: small;
+    text-align: center;
+}
+
+.buttonDeleteSelectedDiscipline {
+    border: 1.5px outset black;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin: 3cm -8.5cm 0 0;
+    float:right;
+    width: 320px;
+    font-size: small;
+    text-align: center;
+}
+
+.buttonCreateDisciplines:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.buttonCreateDisciplines:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}
+
+
+.buttonModifySelectedDiscipline:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.buttonModifySelectedDiscipline:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}
+
+.buttonDeleteSelectedDiscipline:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.buttonDeleteSelectedDiscipline:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}
+
+
+.table{
+    display: table;
+    margin: 20px auto 50px;
+    border-collapse: collapse;
+}
+.table-row {
+    display: table-row;
+}
+.table-cell{
+    display: table-cell;
+    border: 1px solid black;
+    /*padding: 20px;*/
+    min-width: 135px;
+    max-width: 135px;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    height: 50px;
+    vertical-align: middle;
+    background: gray;
+    margin:4% 0 0 13.5%;
+}
+

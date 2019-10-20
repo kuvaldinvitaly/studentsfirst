@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: lavender;
+    font-family: "Comic Sans MS";
+}
+
+.container {
+    /*margin:0 17.5% 0 17%;*/
+    padding-top: 0.5cm;
+
+}
+
+.cards-item {
+    border: 2px solid black;
+    background-color: white;
+    width: 1000px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.button1 {
+    border: 1.5px outset black;
+    float:left;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin:4% 0 0 13.5%;
+    width: 450px;
+}
+
+.button2 {
+    border: 1.5px outset black;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin:4% 30% 0 0;
+    float:right;
+    width: 300px;
+}
+
+.button3 {
+    border: 1.5px outset black;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin:2% 0 0 13.5%;
+    float:left;
+    width: 450px;
+}
+
+.button4 {
+    border: 1.5px outset black;
+    color: black; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: gray; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    margin:2% 30% 0 0;
+    float:right;
+    width: 300px;
+}
+
+.button5 {
+    float: left;
+    margin: -3cm 0 0 1cm;
+}
+
+.button6 {
+    float: right;
+    margin: -5.2cm 3cm 0 0;
+    font-family: Arial;
+}
+
+.button1:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.button1:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}
+
+
+.button2:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.button2:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}
+
+.button3:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.button3:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}
+
+
+.button4:hover {
+    background: rgb(232, 95, 76); /* при наведении курсора мышки */
+}
+
+
+.button4:active {
+    background: rgb(152, 15, 0); /* при нажатии */
+}
+
+.tableHead{
+    margin:6cm 0 0 13.5%;
+}
+
+.table{
+    display: table;
+    margin: 20px auto 50px;
+    border-collapse: collapse;
+}
+.table-row {
+    display: table-row;
+}
+.table-cell1{
+    display: table-cell;
+    border: 1px solid black;
+    /*padding: 20px;*/
+    min-width: 135px;
+    max-width: 135px;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    height: 50px;
+    vertical-align: middle;
+    background: gray;
+    margin:4% 0 0 13.5%;
+}
+.table-cell2{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+    min-width: 297.5px;
+    max-width: 297.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    vertical-align: middle;
+    background: gray;
+}
+.table-cell3{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+    min-width: 297.5px;
+    max-width: 297.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    vertical-align: middle;
+    background: gray;
+}
+.table-cell4{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+    min-width: 135px;
+    max-width: 135px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    vertical-align: middle;
+    background: gray;
+}
+.table-cell5{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+    min-width: 135px;
+    max-width: 135px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    vertical-align: middle;
+    background: gray;
+}
+
+
