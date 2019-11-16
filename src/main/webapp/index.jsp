@@ -16,10 +16,10 @@
     </div>
 
     <div>
-        <a href="https://.." class="button1" target="_blank">Logout</a>
-        <a href="/students" class="button2" target="_blank">Студенты</a>
-        <a href="/disciplines" class="button3" target="_blank">Дисциплины</a>
-        <a href="/terms" class="button4" target="_blank">Семестры</a>
+        <a href="https://.." class="button1" >Logout</a>
+        <a href="/students" class="button2" >Студенты</a>
+        <a href="/disciplines" class="button3" >Дисциплины</a>
+        <a href="/terms" class="button4" >Семестры</a>
     </div>
 
 </div>

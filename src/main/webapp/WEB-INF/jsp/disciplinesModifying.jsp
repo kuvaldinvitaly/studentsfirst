@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +39,7 @@
 <div class="boxSite">
 
     <p><label for="title">Название</label>
-        <input type="text" id="title" name="title" placeholder="Введите название" required autofocus>
+        <input type="text" id="title" name="title" placeholder="${discipline.discipline}" required autofocus>
     </p>
 </div>
 

@@ -15,6 +15,8 @@
     <meta charset="UTF-8">
     <title>Система управления студентами и их успеваемостью</title>
     <link rel="stylesheet" href="../../resources/css/disciplinesListStyle.css">
+    <script src="../../resources/js/functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -44,7 +46,7 @@
 
             <div class="table-row">
                 <div class="table-cell">
-                    <input type="checkbox">
+                    <input type="checkbox" value="${d.id}">
                 </div>
                 <div class="table-cell">${d.discipline}</div>
             </div>
@@ -57,9 +59,11 @@
             <input type="submit" value="Создать дисциплину" class="buttonCreateDisciplines">
         </form>
 
-        <form action="/disciplinesModifying" method="get">
-            <input type="submit" value="Модифицировать выбранную
+
+            <input type="submit" onclick="modifingDiscipline()" value="Модифицировать выбранную
             дисциплину..." class="buttonModifySelectedDiscipline">
+        <form action="/disciplinesModifying" method="get" id="modifDiscForm">
+            <input type="hidden" name="idModifDisc" id="idModifDisc" >
         </form>
 
         <form action="#" method="get">
