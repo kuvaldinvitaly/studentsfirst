@@ -64,7 +64,7 @@
 
 <div class="container" align="center">
     <div>
-        <a href="#" class="buttonCreate">Создать</a>
+        <input type="submit" value="Создать" class="buttonCreate">
     </div>
 </div>
 

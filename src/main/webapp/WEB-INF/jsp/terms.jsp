@@ -39,7 +39,7 @@
             <option value="4">Семестр 4</option>
         </select>
 
-        <button>Выбрать</button>
+        <input type="submit" value="Выбрать">
 
     </div>
 
@@ -52,9 +52,18 @@
     </div>
 
     <div>
-        <a href="/termCreating" class="buttonCreateSemester">Создать семестр...</a>
-        <a href="/termModifying" class="buttonModifySelectedSemester">Модифицировать текущий семестр...</a>
-        <a href="#" class="buttonDeleteSelectedSemester">Удалить текущий семестр</a>
+       <form action="/termCreating" >
+           <input type="submit" value="Создать семестр..." class="buttonCreateSemester">
+       </form>
+
+        <form action="/termModifying" >
+            <input type="submit" value="Модифицировать текущий семестр..." class="buttonModifySelectedSemester">
+        </form>
+
+        <form action="/terms" >
+            <input type="submit" value="Удалить текущий семестр" class="buttonDeleteSelectedSemester">
+        </form>
+
     </div>
 
 

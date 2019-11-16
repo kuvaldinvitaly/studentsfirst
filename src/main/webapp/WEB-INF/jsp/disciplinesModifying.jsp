@@ -43,7 +43,7 @@
 
 <div class="container" align="center">
     <div>
-        <a href="#" class="buttonApply">Применить</a>
+        <button class="buttonApply">Применить</button>
     </div>
 </div>
 

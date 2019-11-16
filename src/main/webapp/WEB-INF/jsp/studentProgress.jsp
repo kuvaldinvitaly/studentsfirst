@@ -54,7 +54,9 @@
         <option value="4">Семестр 4</option>
     </select>
 
-    <button>Выбрать</button>
+    <input type="submit" value="Выбрать">
+
+
 
 </div>
 

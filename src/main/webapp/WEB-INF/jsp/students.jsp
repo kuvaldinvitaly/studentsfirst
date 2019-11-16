@@ -22,10 +22,22 @@
     </div>
 
     <div>
-        <a href="/studentProgress" class="button1">Просмотреть успеваемость выбранных студентов</a>
-        <a href="/studentCreating" class="button2">Создать студента</a>
-        <a href="/studentModifying" class="button3">Модифицировать выбранного студента</a>
-        <a href="#" class="button4">Удалить выбранных студентов</a>
+        <form action="/studentProgress">
+        <input type="submit" value="Просмотреть успеваемость выбранного студента" class="button1">
+        </form>
+
+        <form action="/studentCreating">
+            <input type="submit" value="Создать студента" class="button2">
+        </form>
+
+        <form action="/studentModifying">
+            <input type="submit" value="Модифицировать выбранного студента" class="button3">
+        </form>
+
+        <form action="/students">
+            <input type="submit" value="Удалить выбранных студентов" class="button4">
+        </form>
+
     </div>
 
 </div>

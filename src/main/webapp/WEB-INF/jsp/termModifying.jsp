@@ -49,7 +49,7 @@
 
     <div class="container" align="center">
         <div>
-            <a href="#" class="buttonApply">Применить</a>
+            <input type="submit" value="Применить" class="buttonApply">
         </div>
     </div>
 
