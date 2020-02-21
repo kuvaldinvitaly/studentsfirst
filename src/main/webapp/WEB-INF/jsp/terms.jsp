@@ -24,8 +24,8 @@
     </div>
 
     <div>
-        <a href="https://.." class="button1" target="_blank">Logout</a>
-        <a href="/index.jsp" class="button2" target="_blank">На главную</a>
+        <a href="https://.." class="button1" >Logout</a>
+        <a href="/index.jsp" class="button2" >На главную</a>
 
     </div>
 

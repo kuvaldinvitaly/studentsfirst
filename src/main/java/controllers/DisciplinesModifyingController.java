@@ -20,4 +20,13 @@ public class DisciplinesModifyingController extends HttpServlet {
         req.setAttribute("discipline", discipline);
         req.getRequestDispatcher("/WEB-INF/jsp/disciplinesModifying.jsp").forward(req, resp);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String newName = req.getParameter("title");
+        String idDisc = req.getParameter("discId");
+        DBManager.disciplineModifying(idDisc, newName);
+        resp.sendRedirect("/disciplines");
+
+    }
 }

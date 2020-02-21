@@ -27,8 +27,8 @@
     </div>
 
 </div>
-<a href="/index.jsp" class="buttonToMain" target="_blank">На главную</a>
-<a href="https://.." class="buttonLogout" target="_blank">Logout</a>
+<a href="/index.jsp" class="buttonToMain" >На главную</a>
+<a href="https://.." class="buttonLogout" >Logout</a>
 <div>
 
     <div class="tableHead">
@@ -43,7 +43,6 @@
         </div>
 
         <c:forEach items="${disciplines}" var="d">
-
             <div class="table-row">
                 <div class="table-cell">
                     <input type="checkbox" value="${d.id}">
@@ -66,8 +65,9 @@
             <input type="hidden" name="idModifDisc" id="idModifDisc" >
         </form>
 
-        <form action="#" method="get">
+
             <input type="submit" value="Удалить выбранную дисциплину..." class="buttonDeleteSelectedDiscipline">
+        <form action="#" method="get">
         </form>
 
 

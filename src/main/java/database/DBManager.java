@@ -46,18 +46,6 @@ public class DBManager {
 
     }
 
-    public static void createStudents(String newSurname,String newName,String newGroup,String newDate) {
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/students_first?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "1234");
-            Statement stmt = con.createStatement();
-            stmt.execute("INSERT INTO `student` (`sername`, `name`, `group`, `date`) VALUES ('"+newSurname+"', '"+newName+"', '"+newGroup+"', '"+newDate+"')\n;");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     public static List<Student> getAllActiveStudents() {
         ArrayList<Student> students = new ArrayList<>();
         try {
@@ -65,11 +53,11 @@ public class DBManager {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost/students_first?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "1234");
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("select * from student where status = 1");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM student WHERE status = 1");
             while (rs.next()) {
                 Student student = new Student();
                 student.setId(rs.getInt("id"));
-                student.setSurname(rs.getString("sername"));
+                student.setSername(rs.getString("sername"));
                 student.setName(rs.getString("name"));
                 student.setGroup(rs.getString("group"));
                 student.setDate(rs.getString("date"));
@@ -80,6 +68,20 @@ public class DBManager {
         }
         return students;
     }
+
+    public static void createStudents(String newSurname,String newName,String newGroup,String newDate) {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost/students_first?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "1234");
+            Statement stmt = con.createStatement();
+            stmt.execute("INSERT INTO `student` (`sername`, `name`, `group`, `date`) VALUES ('" + newSurname + "', '" + newName + "', '" + newGroup + "', '"  + newDate + "');\n");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
 
 
     public static Discipline getDisciplinesById(String id) {
@@ -99,8 +101,54 @@ public class DBManager {
             e.printStackTrace();
         }
         return null;
-
     }
 
+    public static void disciplineModifying(String idDisc, String newName) {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost/students_first?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "1234");
+            Statement stmt = con.createStatement();
+            stmt.execute("UPDATE `discipline` SET `discipline` = '" + newName + "' WHERE (`id` = '" + idDisc + "');\n");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Student getStudentsById(String id) {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost/students_first?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "1234");
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM student WHERE status = 1 and id = " + id);
+            while (rs.next()) {
+                Student student = new Student();
+                student.setId(rs.getInt("id"));
+                student.setSername(rs.getString("sername"));
+                student.setName(rs.getString("name"));
+                student.setGroup(rs.getString("group"));
+                student.setDate(rs.getString("date"));
+                return student;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static void studentModifying(String idStud, String newSecondName, String newName, String newGroup, String newDate) {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost/students_first?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "1234");
+            Statement stmt = con.createStatement();
+            stmt.execute("UPDATE `student` SET `sername` = '"+ newSecondName +"', `name` = '"+ newName +"', `group` = '"+ newGroup +"', `date` = '"+ newDate +"' WHERE (`id` = '"+idStud+"');\n");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
+
+
 

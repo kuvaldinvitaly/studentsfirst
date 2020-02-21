@@ -25,10 +25,12 @@
     </div>
 
     <div>
-        <a href="https://.." class="button1" target="_blank">Logout</a>
-        <a href="/index.jsp" class="button2" target="_blank">На главную</a>
-        <a href="/disciplines" class="button3" target="_blank">Назад</a>
+        <a href="https://.." class="button1" >Logout</a>
+        <a href="/index.jsp" class="button2" >На главную</a>
+        <a href="/disciplines" class="button3" >Назад</a>
     </div>
+
+
 
     <div class="tableHead">
         <h1>Для того чтобы модифицировать дисциплину, введите новое значение поля и нажмите кнопку "Применить"</h1>
@@ -36,10 +38,15 @@
 
 </div>
 
+<form action="/disciplinesModifying" method="post">
+
 <div class="boxSite">
 
     <p><label for="title">Название</label>
         <input type="text" id="title" name="title" placeholder="${discipline.discipline}" required autofocus>
+
+        <input type="hidden" name="discId" value="${discipline.id}">
+
     </p>
 </div>
 
@@ -48,6 +55,8 @@
         <button class="buttonApply">Применить</button>
     </div>
 </div>
+
+</form>
 
 
 </body>

@@ -3,13 +3,13 @@ package entity;
 public class Student {
 
     private int id;
-    private String surname;
+    private String sername;
     private String name;
     private String group;
     private String date;
     private int status = 1;
 
-    public Student(){
+    public Student() {
 
     }
 
@@ -21,12 +21,12 @@ public class Student {
         this.id = id;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getSername() {
+        return sername;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setSername(String sername) {
+        this.sername = sername;
     }
 
     public String getName() {
@@ -70,7 +70,7 @@ public class Student {
 
         if (getId() != student.getId()) return false;
         if (getStatus() != student.getStatus()) return false;
-        if (getSurname() != null ? !getSurname().equals(student.getSurname()) : student.getSurname() != null)
+        if (getSername() != null ? !getSername().equals(student.getSername()) : student.getSername() != null)
             return false;
         if (getName() != null ? !getName().equals(student.getName()) : student.getName() != null) return false;
         if (getGroup() != null ? !getGroup().equals(student.getGroup()) : student.getGroup() != null) return false;
@@ -80,7 +80,7 @@ public class Student {
     @Override
     public int hashCode() {
         int result = getId();
-        result = 31 * result + (getSurname() != null ? getSurname().hashCode() : 0);
+        result = 31 * result + (getSername() != null ? getSername().hashCode() : 0);
         result = 31 * result + (getName() != null ? getName().hashCode() : 0);
         result = 31 * result + (getGroup() != null ? getGroup().hashCode() : 0);
         result = 31 * result + (getDate() != null ? getDate().hashCode() : 0);
@@ -92,7 +92,7 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "id=" + id +
-                ", surname='" + surname + '\'' +
+                ", sername='" + sername + '\'' +
                 ", name='" + name + '\'' +
                 ", group='" + group + '\'' +
                 ", date='" + date + '\'' +

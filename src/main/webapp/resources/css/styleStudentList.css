@@ -125,72 +125,86 @@ body {
 
 .table{
     display: table;
-    margin: 20px auto 50px;
+    /*margin: 20px auto 50px;*/
     border-collapse: collapse;
 }
 .table-row {
     display: table-row;
+    margin: auto;
 }
 .table-cell1{
     display: table-cell;
     border: 1px solid black;
     /*padding: 20px;*/
-    min-width: 135px;
-    max-width: 135px;
+    /*min-width: 135px;*/
+    /*max-width: 135px;*/
     /*overflow: hidden;*/
     text-overflow: ellipsis;
     height: 50px;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     background: gray;
-    margin:4% 0 0 13.5%;
+    /*margin:4% 0 0 13.5%;*/
+    margin: auto;
 }
 .table-cell2{
     display: table-cell;
     border: 1px solid black;
     padding: 10px;
-    min-width: 297.5px;
-    max-width: 297.5px;
+    /*min-width: 297.5px;*/
+    /*max-width: 297.5px;*/
     overflow: hidden;
     text-overflow: ellipsis;
     height: 50px;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     background: gray;
 }
 .table-cell3{
     display: table-cell;
     border: 1px solid black;
     padding: 10px;
-    min-width: 297.5px;
-    max-width: 297.5px;
+    /*min-width: 297.5px;*/
+    /*max-width: 297.5px;*/
     overflow: hidden;
     text-overflow: ellipsis;
     height: 50px;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     background: gray;
 }
 .table-cell4{
     display: table-cell;
     border: 1px solid black;
     padding: 10px;
-    min-width: 135px;
-    max-width: 135px;
+    /*min-width: 135px;*/
+    /*max-width: 135px;*/
     overflow: hidden;
     text-overflow: ellipsis;
     height: 50px;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     background: gray;
 }
 .table-cell5{
     display: table-cell;
     border: 1px solid black;
     padding: 10px;
-    min-width: 135px;
-    max-width: 135px;
+    /*min-width: 135px;*/
+    /*max-width: 135px;*/
     overflow: hidden;
     text-overflow: ellipsis;
     height: 50px;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     background: gray;
 }
 
-
+/*.table-cell{*/
+/*    display: table-cell;*/
+/*    border: 1px solid black;*/
+/*    !*padding: 20px;*!*/
+/*    min-width: 300px;*/
+/*    max-width: 3000px;*/
+/*    !*overflow: hidden;*!*/
+/*    text-overflow: ellipsis;*/
+/*    height: 100px;*/
+/*    vertical-align: middle;*/
+/*    background: gray;*/
+/*    margin:4% 0 0 13.5%;*/
+/*}*/
